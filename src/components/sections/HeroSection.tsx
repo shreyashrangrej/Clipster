@@ -19,7 +19,7 @@ export default function HeroSection() {
             Bookings at Clipster. Where Expertise Meets Convenience for a Cut
             Above the Rest!
           </p>
-          <div className="items-center justify-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
+          <div className="flex items-center justify-center gap-3">
             <Button>Login</Button>
             <Button variant={"outline"}>About</Button>
           </div>
@@ -27,4 +27,4 @@ export default function HeroSection() {
       </div>
     </section>
   );
-};
+}
