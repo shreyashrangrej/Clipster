@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 
-export default () => {
+export default function HeroSection() {
   return (
     <section>
       <div className="max-w-screen-xl mx-auto px-4 py-28 gap-12 text-gray-600 md:px-8">
