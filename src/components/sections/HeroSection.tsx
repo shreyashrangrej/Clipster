@@ -1,14 +1,15 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
     <section>
-      <div className="max-w-screen-xl mx-auto px-4 py-28 gap-12 text-gray-600 md:px-8">
+      <div className="max-w-screen-xl mx-auto px-4 py-28 gap-12 md:px-8">
         <div className="space-y-5 max-w-4xl mx-auto text-center">
           <h1 className="text-sm text-indigo-600 font-medium">
             Strands of Style
           </h1>
-          <h2 className="text-4xl text-gray-800 font-extrabold mx-auto md:text-5xl">
+          <h2 className="text-4xl font-extrabold mx-auto md:text-5xl">
             Elevate Your Look with{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4F46E5] to-[#E114E5]">
               Seamless Barber Bookings and Exceptional Service
@@ -20,7 +21,9 @@ export default function HeroSection() {
             Above the Rest!
           </p>
           <div className="flex items-center justify-center gap-3">
-            <Button>Login</Button>
+            <Link href="/login">
+              <Button>Login</Button>
+            </Link>
             <Button variant={"outline"}>About</Button>
           </div>
         </div>
